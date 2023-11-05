@@ -27,7 +27,7 @@ nav {
     grid-column: 2/3;
     grid-row: 1/2;
     margin-top: 100px;
-    color: white;
+    color: white
 }
 
 #hero {
@@ -67,8 +67,6 @@ main section img {
     grid-column: 1/11;
     grid-row: 4/9;
 
-
-
 }
 
 body {
@@ -84,7 +82,7 @@ h2 {
 header {
     display: grid;
     grid-template-columns: 150px auto;
-    background-color: aqua; 
+    background-color: rgb(163, 252, 255);
     
 }
 
