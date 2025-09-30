@@ -65,6 +65,7 @@
     </section>
 
     <!-- Contact Form -->
+    <!-- Contact Form -->
     <section>
       <h2>Send Us a Message</h2>
       <form action="thankyou.html" method="post">
@@ -75,21 +76,25 @@
         <input type="email" id="email" name="email" required><br><br>
 
         <p>Purpose of Message:</p>
-        <label><input type="radio" name="purpose" value="General Inquiry" required> General Inquiry</label><br>
-        <label><input type="radio" name="purpose" value="Reservation Question"> Reservation Question</label><br>
-        <label><input type="radio" name="purpose" value="Website Suggestion"> Website Suggestion</label><br><br>
+        <input type="radio" id="purpose-general" name="purpose" value="General Inquiry" required>
+        <label for="purpose-general">General Inquiry</label><br>
+
+        <input type="radio" id="purpose-reservation" name="purpose" value="Reservation Question">
+        <label for="purpose-reservation">Reservation Question</label><br>
+
+        <input type="radio" id="purpose-website" name="purpose" value="Website Suggestion">
+        <label for="purpose-website">Website Suggestion</label><br><br>
 
         <label for="message">Message:</label><br>
         <textarea id="message" name="message" rows="5" required></textarea><br><br>
 
-        <label>
-          <input type="checkbox" name="subscribe">
-          Please subscribe me to the monthly newsletter
-        </label><br><br>
+        <input type="checkbox" id="subscribe" name="subscribe">
+        <label for="subscribe">Please subscribe me to the monthly newsletter</label><br><br>
 
-        <button type="submit">Send Message</button>
+        <button type="submit" id="submitBtn">Send Message</button>
       </form>
     </section>
+
   </main>
 
   <footer>
