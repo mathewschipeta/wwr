@@ -130,15 +130,8 @@ footer .foot {
   padding: 24px 0;
 }
 .social a {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 36px; height: 36px;
-  border-radius: 50%;
-  background: var(--primary-color);
-  color: #fff; text-decoration: none;
-  font-weight: 700;
-  margin-left: 8px;
+text-decoration: none;
+  
 }
 .social a:hover { background: #1e5e3b; }
 
