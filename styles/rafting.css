@@ -18,9 +18,41 @@ body {
     font-family: var(--body-font);
     color: var(--text-color);
     background-color: var(--background-color);
+    line-height: 1.6;
 }
 
-header, main, footer {
+/* Header Layout */
+header {
+    display: grid;
+    grid-template-columns: 150px auto;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 10px 20px;
+}
+
+header img.logo {
+    width: 120px;
+    height: auto;
+}
+
+header nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+header nav a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    color: var(--accent-color);
+}
+
+main {
     width: 840px;
     margin: 0 auto;
 }
@@ -28,6 +60,7 @@ header, main, footer {
 h1, h2 {
     color: var(--primary-color);
     font-family: var(--header-font);
+    margin-bottom: 10px;
 }
 
 nav, p, section, article {
@@ -39,6 +72,7 @@ nav, p, section, article {
     text-decoration: none;
 }
 
+/* Hero Section */
 .hero {
     position: relative;
 }
@@ -80,4 +114,59 @@ nav, p, section, article {
     width: 125px;
     margin-left: 12px;
     border-radius: 4px;
+}
+
+/* History Section */
+.history-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    align-items: center;
+}
+
+.history-content img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Adventure Gallery */
+.adventure-gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.adventure-gallery figure {
+    text-align: center;
+}
+
+.adventure-gallery img {
+    width: 100%;
+    border-radius: 6px;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 10px 20px;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer .socialmedia {
+    display: flex;
+    gap: 15px;
+}
+
+footer .socialmedia img {
+    width: 24px;
+    height: 24px;
 }
